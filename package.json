@@ -1,0 +1,26 @@
+{
+  "name": "fse-chatroom",
+  "version": "1.0.0",
+  "description": "It's the pre-registration programming assignment for 18652",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Depasinre/FSE-ChatRoom.git"
+  },
+  "author": "Haoming Yuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Depasinre/FSE-ChatRoom/issues"
+  },
+  "homepage": "https://github.com/Depasinre/FSE-ChatRoom#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
