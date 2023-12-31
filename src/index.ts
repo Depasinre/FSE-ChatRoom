@@ -84,12 +84,14 @@ app.post('/register', (req, res) =>{
       });
     db.read()
     let userArray = db.chain.get('users');
+    // check if username exist
     if(userArray.find({username: username}).value() != undefined){
         console.log("fail due to duplicate")
         res.end("username already exist")
 
     } else {
         console.log("success")
+        // increase the primary key and push to db
         let newId = userArray.value()[userArray.value().length - 1].id + 1;
         console.log(newId)
         userInfo.id = newId;
@@ -97,9 +99,4 @@ app.post('/register', (req, res) =>{
         db.write();
         res.end("registration successful")
     }
-
-    
-    
-
-
 })
