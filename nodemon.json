@@ -1,3 +1,6 @@
 {
-    "ignore": ["data/*"]
-}
+    "watch": ["src", "client"],
+    "ext": "ts,json",
+    "ignore": ["src/**/*.spec.ts", "data/*", "dist"],
+    "exec": "npm run start"     
+  }

@@ -2,11 +2,13 @@
   "name": "fse-chatroom",
   "version": "1.0.0",
   "description": "It's the pre-registration programming assignment for 18652",
-  "exports": "./index.js",
+  "exports": "./dist/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,14 @@
     "lowdb": "^7.0.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/parser": "^6.16.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
   }
 }

@@ -1,4 +1,15 @@
 {
-  "user": [],
-  "post": []
+  "users": [
+    {
+      "id": -1,
+      "username": "initial",
+      "password": "initial"
+    },
+    {
+      "id": 0,
+      "username": "depasinre",
+      "password": "1111"
+    }
+  ],
+  "posts": []
 }
